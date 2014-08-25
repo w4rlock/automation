@@ -10,7 +10,6 @@ var Time = new function(){
 
   this.relativeTime=function(fecha1){
     var d = moment().diff(fecha1, 'm');
-    console.log(d);
     return d;
   },
 
@@ -90,11 +89,10 @@ var Beer = new function(){
 
   function addCustomItem(min, acc, img){
     var hh_cla = null, mm_cla = null;
-    intervals.push(hh_cla = Time.subtractMins(intervals[intervals.length-1], min));
+    hh_cla = Time.subtractMins(intervals[intervals.length-1], min);
     mm_cla = intsCoccion[intsCoccion.length-1].min - min;
     intsCoccion.push(new Elem(mm_cla, acc, img, hh_cla));
     intsCoccion = Lazy(intsCoccion).sortBy(function(ob){ return ob.min; }).toArray();
-    intervals = Lazy(intervals).sortBy(function(ob){ return ob; }).toArray();
   }
 
   this.start_macerado=function(){},
@@ -109,6 +107,8 @@ var Beer = new function(){
     addCustomItem(34,'Herbir Agua Levadura 250 cm3' , 'water.png');
     addCustomItem(20,'Preparar Levadura 30 C°', 'levadura.png');
     addCustomItem(15,'Irish Mosh 5 GR', 'irish_moss.png');
+
+    intervals = Lazy(intsCoccion).map(function(x) { return x.at; }).toArray();
 
     runTask();
   },
