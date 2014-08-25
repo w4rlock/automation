@@ -6,6 +6,7 @@ pids
 .grunt
 build/Release
 node_modules
+app/pkg
 mongodb
 .*.sw?
 .~*
