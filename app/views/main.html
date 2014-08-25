@@ -1,0 +1,45 @@
+      <div class="container">
+        <div class="row whiteContainer">
+          <div class="[ col-xs-12 col-sm-offset-2 col-sm-8 ]">
+            <ul class="event-list">
+              <li ng-repeat="item in coccion" id="acc{{$index}}">
+                <time datetime="2014-07-20" class="ng-animate ng-enter ng-enter-active">
+                  <span class="day">{{ item.at }}</span>
+                  <span class="month"> <i class="fa fa-clock-o"></i> {{ item.min }}</span>
+                </time>
+                <img alt="Independence Day" ng-src="img/{{item.img}}" />
+                <div class="info">
+                  <h2 class="title">{{ item.acc }}</h2>
+                  <!--<p class="desc">test</p>-->
+                </div>
+              </li>
+              <!--<li>-->
+                <!--<time datetime="2014-07-20">-->
+                  <!--<span class="day">4</span>-->
+                  <!--<span class="month">Jul</span>-->
+                  <!--<span class="year">2014</span>-->
+                  <!--<span class="time">ALL DAY</span>-->
+                <!--</time>-->
+                <!--<img alt="Independence Day" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg" />-->
+                <!--<div class="info">-->
+                  <!--<h2 class="title">Independence Day</h2>-->
+                  <!--<p class="desc">United States Holiday</p>-->
+                <!--</div>-->
+                <!--<div class="social">-->
+                  <!--<ul>-->
+                    <!--<li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>-->
+                    <!--<li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>-->
+                    <!--<li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>-->
+                  <!--</ul>-->
+                <!--</div>-->
+              <!--</li>-->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <script>
+        window.onbeforeunload = function (e) { e = e || window.event;
+        if (e) { e.returnValue = 'Sure?'; }
+        return 'ATENCION: LOS DATOS PUEDEN PERDERSE, DESEA ESO MOGOLICO?';
+        };
+      </script>

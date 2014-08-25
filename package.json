@@ -1,0 +1,14 @@
+{
+  "name": "automation",
+  "version": "0.0.0",
+  "description": "Beer Automation",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "w4rlock",
+  "license": "ISC",
+  "dependencies": {
+    "express": "~4.8.5"
+  }
+}
