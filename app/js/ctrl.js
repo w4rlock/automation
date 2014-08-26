@@ -21,7 +21,7 @@ var Time = new function(){
     return moment().add(mins, 'm');
   }
 }
-Time.MASK_HHMM = 'hh:mm';
+Time.MASK_HHMM = 'HH:mm';
 
 var SoundManager = new function(){
   soundManager.setup({
