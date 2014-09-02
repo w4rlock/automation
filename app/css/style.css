@@ -2,10 +2,10 @@
 body {
 padding: 60px 0px;
 background-color: rgb(220, 220, 220);
-background-image:url('../img/wall4.jpg');
+background-image:url('../img/wall1.jpg');
 background-repeat: no-repeat;
 background-attachment: fixed;
-background-position: 25% 10%;
+background-position: 10%;
 }
 
 .event-list {
@@ -38,14 +38,14 @@ display: none;
 }
 .event-list > li > time > .day {
 display: block;
-font-size: 32pt;
+font-size: 30pt;
 font-weight: 100;
 line-height: 1;
 }
 .event-list > li time > .month {
 display: block;
 font-size: 24pt;
-font-weight: 900;
+font-weight: 600;
 line-height: 1;
 }
 .event-list > li > img {

@@ -60,10 +60,10 @@ var Beer = new function(){
 
   function loadData(){
     intsCoccion = [
-     new Elem(0,'Cascade 22 GR', 'lupulo.png'),
-     new Elem(15,'Hallertauer 22 GR','lupulo.png'),
-     new Elem(60,'Hallertauer 22 GR', 'lupulo.png'),
-     new Elem(70,'Hallertauer 22 GR', 'lupulo.png'),
+     new Elem(0,'Cascade', 'lupulo.png'),
+     new Elem(15,'Hallertauer 9 GR','lupulo.png'),
+     new Elem(40,'Hallertauer 10 GR', 'lupulo.png'),
+     new Elem(60,'Hallertauer 11 GR', 'lupulo.png'),
      new Elem(75,'Apagar y Whirpool','wirpool.png')
     ];
   }
@@ -108,9 +108,9 @@ var Beer = new function(){
         intervals.push(ob.at);
       });
 
-      addCustomItem(34,'Herbir Agua Levadura 500 cm3' , 'water.png');
-      addCustomItem(20,'Preparar Levadura 22 GR agua a 30 C°', 'levadura.png');
-      addCustomItem(15,'Irish Mosh 10 GR', 'irish_moss.png');
+      addCustomItem(34,'Herbir Agua Levadura 250 cm3' , 'water.png');
+      addCustomItem(20,'Preparar Levadura 30 C°', 'levadura.png');
+      addCustomItem(15,'Irish Mosh 5 GR', 'irish_moss.png');
 
       intervals = Lazy(intsCoccion).map(function(x) { return x.at; }).toArray();
 
